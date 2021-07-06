@@ -7,4 +7,3 @@ for i in range(2,N+1):
     fib.append(fib[i-1] + fib[i-2])
     
 print(fib[N])
-    
