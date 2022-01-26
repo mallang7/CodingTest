@@ -18,6 +18,7 @@ def turn_left():
 count=1
 turn_time=0
 while True:
+    # 1단계
     turn_left()
     nx=x+dx[direction]
     ny=y+dy[direction]
