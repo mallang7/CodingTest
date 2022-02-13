@@ -1,15 +1,21 @@
-from itertools import permutations
-
-
 from itertools import combinations
 N = int(input())
 coins=list(map(int,input().split()))
 
 coins.sort()
-money=[]
-for i in range(1,len(coins)):
-    money+=(list(combinations(coins,i)))
-count = 0
+money=coins.copy()
+for i in range(2,len(coins)):
+    money+=list(combinations(coins,i))
+print(money)
+
+sum_li=[]
+for i in range(len(money)):
+    sum_li.append(sum(money[i]))
+
+print(sum_li)
+    
+    
+count = 0  
 while True:
     count += 1
     for i in money:
