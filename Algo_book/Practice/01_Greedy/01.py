@@ -3,12 +3,13 @@ n = int(input())
 adventure = list(map(int,input().split()))
 
 adventure.sort()
-count = 0
-while adventure:
-    out = adventure[-1]
-    del adventure[-1]
-    
-    for i in range(out-1):
-        del adventure[0]
+result = 0 #답
+count = 0 #현재 그룹에 포함된 모험가 수
+
+for i in adventure:
     count += 1
-print(count)
+    if i >= count:
+        result += 1
+        count = 0
+
+print(result)
