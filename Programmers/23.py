@@ -5,7 +5,7 @@ def solution(prices):
         answer[i] = len(prices) - i - 1
         for j in range(i+1,len(prices)):
             if prices[j] < prices[i]:
-                answer[i] -= (len(prices)-j-1)
+                answer[i] -= (len(prices)-1-j)
                 break
                 
     return answer
