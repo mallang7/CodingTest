@@ -20,4 +20,6 @@ def solution(food_times,k):
         k -= 1
         if (k ==0):
             index = turn(index,idx)
+        if (len(idx)==0):
+            return -1
     return index
