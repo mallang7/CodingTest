@@ -1,4 +1,4 @@
-# 럭키 스트레이트
+# 07. 럭키 스트레이트
 def solution(N):
     N_str = str(N)
     left = N_str[:len(N_str)//2]
