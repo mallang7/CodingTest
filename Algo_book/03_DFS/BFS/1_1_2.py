@@ -1,10 +1,15 @@
 # 음료수 얼려 먹기 149p
-n, m = map(int,input().split())
+#n, m = map(int,input().split())
+n=4
+m=5
 
-graph=[]
-for i in range(n):
-    graph.append(list(map(int,input())))
+# graph=[]
+# for i in range(n):
+#     graph.append(list(map(int,input())))
     
+# print(graph)
+graph = [[0,0,1,1,0],[0,0,0,1,1],[1,1,1,1,1],[0,0,0,0,0]]
+
 def dfs(x,y):
     if x <= -1 or x> n or y <= -1 or y > n:
         return False
